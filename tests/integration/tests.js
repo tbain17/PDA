@@ -59,7 +59,7 @@ describe('calculator functionality', function() {
     expect(running_total.getAttribute('value')).to.eventually.equal('6961381')
   })
 
-  it('should display large numbers', function(){
+  it('should display decimal numbers', function(){
     running_total = element(by.css('#running_total'))
     element(by.css('#number9')).click();
     element(by.css('#operator_divide')).click();
